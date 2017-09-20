@@ -1,0 +1,1407 @@
+dialer-app (0.1+17.04.20161209-0ubuntu1) zesty; urgency=medium
+
+  * Make use of 'ubuntu-app-platform' snap interface.
+
+ -- Renato Araujo Oliveira Filho <renato.filho@canonical.com>  Fri, 09 Dec 2016 15:35:05 +0000
+
+dialer-app (0.1+17.04.20161130-0ubuntu1) zesty; urgency=medium
+
+  [ Gustavo Pichorim Boiko ]
+  * Make it work with the new telepathyHelper's account layout
+
+  [ Michael Terry ]
+  * Fix a typo in the dispatch-url registration. (LP: #1640288)
+
+ -- Tiago Salem Herrmann <tiago.herrmann@canonical.com>  Wed, 30 Nov 2016 15:14:37 +0000
+
+dialer-app (0.1+17.04.20161124-0ubuntu1) zesty; urgency=medium
+
+  * Append "SNAP" path into the base application path, when that var is
+    set. (LP: #1629009)
+
+ -- Renato Araujo Oliveira Filho <renato.filho@canonical.com>  Thu, 24 Nov 2016 18:54:52 +0000
+
+dialer-app (0.1+17.04.20161020-0ubuntu1) zesty; urgency=medium
+
+  [ Renato Araujo Oliveira Filho ]
+  * Snappy package.
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Thu, 20 Oct 2016 15:15:55 +0000
+
+dialer-app (0.1+16.10.20160825.2-0ubuntu1) yakkety; urgency=medium
+
+  [ Florian Boucault ]
+  * Improve startup time (300ms for hot starts on krillin):
+
+ -- bill.filler@canonical.com <bill.filler@canonical.com>  Thu, 25 Aug 2016 20:19:35 +0000
+
+dialer-app (0.1+16.10.20160822-0ubuntu1) yakkety; urgency=medium
+
+  [ Florian Boucault ]
+  * Crossbuilding fixes
+
+  [ Gustavo Pichorim Boiko ]
+  * Fix selecting the default account.
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Mon, 22 Aug 2016 14:07:55 +0000
+
+dialer-app (0.1+16.10.20160817-0ubuntu1) yakkety; urgency=medium
+
+  [ Florian Boucault ]
+  * Improve startup time by avoid compiling HistoryPage until needed.
+    (LP: #1612307)
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Wed, 17 Aug 2016 17:54:43 +0000
+
+dialer-app (0.1+16.10.20160729-0ubuntu1) yakkety; urgency=medium
+
+  * Replace the header and bottom edge by the new ones from SDK
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Fri, 29 Jul 2016 20:22:58 +0000
+
+dialer-app (0.1+16.10.20160624.1-0ubuntu1) yakkety; urgency=medium
+
+  [ Florian Boucault ]
+  * Compile and instantiate MMI plugins asynchronously. Saves around
+    300ms of startup time.
+
+  [ Gustavo Pichorim Boiko ]
+  * Disable tests in arm64.
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Fri, 24 Jun 2016 15:52:34 +0000
+
+dialer-app (0.1+16.04.20160504-0ubuntu1) xenial; urgency=medium
+
+  * In order to make it clear that emergency calls are possible in a sim
+    locked situation, show "Emergency Calls" in the header together with
+    a sim locked icon. (LP: #1572880)
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Wed, 04 May 2016 03:13:27 +0000
+
+dialer-app (0.1+16.04.20160429-0ubuntu1) xenial; urgency=medium
+
+  [ CI Train Bot ]
+  * Resync trunk.
+
+  [ Gerry Boland, Nick Dedekind ]
+  * Fixes for dynamic grid units support: set implicit sizes on
+    MainView, and have min/max window size update on GU change
+
+ -- Bill Filler <ci-train-bot@canonical.com>  Fri, 29 Apr 2016 21:10:52 +0000
+
+dialer-app (0.1+16.04.20160317-0ubuntu1) xenial; urgency=medium
+
+  * Do not pass null as value for any initial value. (LP: #1558780)
+
+ -- Renato Araujo Oliveira Filho <renato.filho@canonical.com>  Thu, 17 Mar 2016 22:06:59 +0000
+
+dialer-app (0.1+16.04.20160311-0ubuntu1) xenial; urgency=medium
+
+  [ CI Train Bot ]
+  * Resync trunk.
+
+  [ Tiago Salem Herrmann ]
+  * Add support for copy'n'paste to the keypad entry. (LP: #1471680)
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Fri, 11 Mar 2016 19:44:26 +0000
+
+dialer-app (0.1+16.04.20160211-0ubuntu1) xenial; urgency=medium
+
+  * Replace background image by default background color Change
+    UbuntuColors.lightAubergine to UbuntuColors.darkGrey removed:
+    src/qml/assets/dialer_background_full@27.png
+
+ -- Tiago Salem Herrmann <tiago.herrmann@canonical.com>  Thu, 11 Feb 2016 18:07:00 +0000
+
+dialer-app (0.1+16.04.20160107.1-0ubuntu1) xenial; urgency=medium
+
+  * Use the new Addressbook header.
+
+ -- Renato Araujo Oliveira Filho <renato.filho@canonical.com>  Thu, 07 Jan 2016 18:16:40 +0000
+
+dialer-app (0.1+16.04.20160105.1-0ubuntu1) xenial; urgency=medium
+
+  [ Tiago Salem Herrmann ]
+  * Fix broken binding on head.sections.selectedIndex.
+  * Fix broken binding. Qt.binding() must receive a function as
+    argument.
+
+ -- Bill Filler <ci-train-bot@canonical.com>  Tue, 05 Jan 2016 16:25:51 +0000
+
+dialer-app (0.1+16.04.20151207-0ubuntu1) xenial; urgency=medium
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+  * Resync trunk.
+
+  [ Tiago Salem Herrmann ]
+  * Disable call button while telepathy is not ready. (LP: #1512851)
+
+ -- Tiago Salem Herrmann <tiago.herrmann@canonical.com>  Mon, 07 Dec 2015 17:54:37 +0000
+
+dialer-app (0.1+16.04.20151124-0ubuntu1) xenial; urgency=medium
+
+  [ CI Train Bot ]
+  * Resync trunk.
+
+  [ Renato Araujo Oliveira Filho ]
+  * Make sure that the search field receives focus when contact list
+    page is active and in search mode. (LP: #1511477)
+
+ -- Renato Araujo Oliveira Filho <renato.filho@canonical.com>  Tue, 24 Nov 2015 00:30:44 +0000
+
+dialer-app (0.1+16.04.20151119.2-0ubuntu1) xenial; urgency=medium
+
+  [ Gustavo Pichorim Boiko ]
+  * Fix the overlap between the contact label and the "private" button
+    on conf calls.
+
+  [ Tiago Salem Herrmann ]
+  * Use new method/signal names.
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Thu, 19 Nov 2015 18:08:10 +0000
+
+dialer-app (0.1+16.04.20151112.1-0ubuntu1) xenial; urgency=medium
+
+  * Make sure we have enough space for the DTMF buttons and also keep
+    the header text untouched. (LP: #1515675)
+  * Set the header section models to [] instead of undefined. (LP:
+    #1515734)
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Thu, 12 Nov 2015 19:34:55 +0000
+
+dialer-app (0.1+16.04.20151111.1-0ubuntu1) xenial; urgency=medium
+
+  * Make sure the account label is selected on the live call. (LP:
+    #1515012)
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Wed, 11 Nov 2015 20:25:42 +0000
+
+dialer-app (0.1+16.04.20151111-0ubuntu1) xenial; urgency=medium
+
+  [ Gustavo Pichorim Boiko ]
+  * We really just want to get the index of the account in the active
+    accounts list.
+
+  [ Tiago Salem Herrmann ]
+  * Avoid removing # and other characters from tel: uri's (LP: #1496845)
+  * Fallback to original phone number when format() returns a blank
+    string
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Wed, 11 Nov 2015 15:17:07 +0000
+
+dialer-app (0.1+16.04.20151030-0ubuntu1) xenial; urgency=medium
+
+  * Restrict the window resizing in desktop mode. (LP: #1488852)
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Fri, 30 Oct 2015 12:25:10 +0000
+
+dialer-app (0.1+16.04.20151026-0ubuntu1) xenial; urgency=medium
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+  * Resync trunk. added: po/vi.po
+
+  [ Tiago Salem Herrmann ]
+  * Port dialer-app to ui-toolkit 1.3
+
+ -- Bill Filler <ci-train-bot@canonical.com>  Mon, 26 Oct 2015 15:06:05 +0000
+
+dialer-app (0.1+15.10.20151015-0ubuntu1) wily; urgency=medium
+
+  [ Gustavo Pichorim Boiko ]
+  * Adapt dialer to the latest changes in history-service and telephony-
+    service.
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Thu, 15 Oct 2015 14:02:25 +0000
+
+dialer-app (0.1+15.10.20150923-0ubuntu1) wily; urgency=medium
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+
+  [ Tiago Salem Herrmann ]
+  * Fix autopilot test replacing Icon11 by Icon
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Wed, 23 Sep 2015 15:33:19 +0000
+
+dialer-app (0.1+15.10.20150810-0ubuntu1) wily; urgency=medium
+
+  [ CI Train Bot ]
+  * Resync trunk.
+
+  [ Tiago Salem Herrmann ]
+  * Improve emergency number validation with libphonenumber. (LP:
+    #1444883, #1334860, #1308365)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Mon, 10 Aug 2015 21:06:08 +0000
+
+dialer-app (0.1+15.10.20150720-0ubuntu2~gcc5.1) wily; urgency=medium
+
+  * No-change test rebuild for g++5 ABI transition
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 22 Jul 2015 23:18:09 +0000
+
+dialer-app (0.1+15.10.20150720-0ubuntu1) wily; urgency=medium
+
+  [ CI Train Bot ]
+  * Resync trunk.
+
+  [ Gustavo Pichorim Boiko ]
+  * Always force dialer-app to go back to the dialpad view when all
+    calls end. (LP: #1471306)
+  * Update pot file.
+
+  [ Sebastien Bacher ]
+  * Use "Phone" rather than "Keypad" for the default title, as
+    recommended by design. Change "Flight Mode" to use proper casing
+    (LP: #1396615)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Mon, 20 Jul 2015 15:04:16 +0000
+
+dialer-app (0.1+15.10.20150618-0ubuntu1) wily; urgency=medium
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+  * Resync trunk.
+
+  [ Sebastien Bacher ]
+  * Insert '+' where the cursor is located (LP: #1459676)
+  * Tweak history-view section headers to be similar to the messaging
+    ones, use less spacing below the separator and smaller and non bold
+    font for the labels (LP: #1375848)
+
+  [ Tiago Salem Herrmann ]
+  * Ask users to disable flight mode before making calls. (LP: #1452372)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Thu, 18 Jun 2015 20:01:23 +0000
+
+dialer-app (0.1+15.10.20150615-0ubuntu1) wily; urgency=medium
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+  * Resync trunk.
+
+  [ Renato Araujo Oliveira Filho ]
+  * New screenshot image New application icon (LP: #1457424, #1430004)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Mon, 15 Jun 2015 15:36:21 +0000
+
+dialer-app (0.1+15.10.20150610-0ubuntu1) wily; urgency=medium
+
+  * 
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Wed, 10 Jun 2015 21:14:54 +0000
+
+dialer-app (0.1+15.10.20150608-0ubuntu1) wily; urgency=medium
+
+  [ CI Train Bot ]
+  * Resync trunk.
+
+  [ Gustavo Pichorim Boiko ]
+  * Ask telephony-service-indicator to remove call notifications when
+    the respective call log entry is activated. (LP: #1455408)
+
+  [ Michael Zanetti ]
+  * Lock it to portrait, it breaks in landscape
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Mon, 08 Jun 2015 17:44:43 +0000
+
+dialer-app (0.1+15.10.20150601.1-0ubuntu1) wily; urgency=medium
+
+  [ CI Train Bot ]
+  * Resync trunk.
+
+  [ Gustavo Pichorim Boiko ]
+  * Fix contact share.
+
+  [ Renato Araujo Oliveira Filho ]
+  * Implement support for no-expandable contacts list (LP: #1368671)
+  * Make use of the new address book components instead of launch the
+    address-book-app. (LP: #1456782)
+
+  [ Sebastien Bacher ]
+  * Update the translations template so new strings can be translated
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Mon, 01 Jun 2015 20:14:38 +0000
+
+dialer-app (0.1+15.04.20150507.1-0ubuntu1) vivid; urgency=medium
+
+  [ Renato Araujo Oliveira Filho ]
+  * Create a swipe item demo. To demonstrate how to swipe items to revel
+    actions. (LP: #1417359)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Thu, 07 May 2015 14:26:07 +0000
+
+dialer-app (0.1+15.04.20150430.1-0ubuntu1) vivid; urgency=medium
+
+  [ Gustavo Pichorim Boiko ]
+  * Mock the notification daemon to prevent dialogs of getting in the
+    way of tests.
+
+  [ Tiago Salem Herrmann ]
+  * Update dialer-app to work with latest telephony-service changes.
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Thu, 30 Apr 2015 18:28:03 +0000
+
+dialer-app (0.1+15.04.20150415.2-0ubuntu1) vivid; urgency=medium
+
+  [ Gustavo Pichorim Boiko ]
+  * Make sure the correct call is finished when pressing the hangup
+    button on a multi-call scenario. Also add autopilot tests to avoid
+    this happening in the future. (LP: #1443971)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Wed, 15 Apr 2015 18:28:36 +0000
+
+dialer-app (0.1+15.04.20150409.1-0ubuntu1) vivid; urgency=medium
+
+  [ Gustavo Pichorim Boiko ]
+  * Sync with the latest changes in history-service to support matching
+    other contact fields.
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Thu, 09 Apr 2015 19:58:50 +0000
+
+dialer-app (0.1+15.04.20150408-0ubuntu1) vivid; urgency=medium
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+  * Resync trunk.
+
+  [ Tiago Salem Herrmann ]
+  * Remove header title when app goes to background. (LP: #1415057)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Wed, 08 Apr 2015 23:14:42 +0000
+
+dialer-app (0.1+15.04.20150330-0ubuntu1) vivid; urgency=medium
+
+  [ Gustavo Pichorim Boiko ]
+  * Update dialer-app to work with the changes in ContactWatcher.
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Mon, 30 Mar 2015 14:04:15 +0000
+
+dialer-app (0.1+15.04.20150324-0ubuntu1) vivid; urgency=medium
+
+  [ You-Sheng Yang ]
+  * insert untranslated keychar to PhoneNumberInput (LP: #1403476)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Tue, 24 Mar 2015 18:14:20 +0000
+
+dialer-app (0.1+15.04.20150216.1-0ubuntu1) vivid; urgency=medium
+
+  [ CI Train Bot ]
+  * Resync trunk
+
+  [ Gustavo Pichorim Boiko ]
+  * Select the correct dialer page on autopilot tests.
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Mon, 16 Feb 2015 20:00:05 +0000
+
+dialer-app (0.1+15.04.20150212-0ubuntu1) vivid; urgency=medium
+
+  [ CI Train Bot ]
+  * Resync trunk
+
+  [ Gustavo Pichorim Boiko ]
+  * Replace the X button by the regular back button when multi-
+    selecting. (LP: #1373494)
+
+  [ Renato Araujo Oliveira Filho ]
+  * Added "sync with google account" button on empty contact list. (LP:
+    #1417341)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 12 Feb 2015 00:56:11 +0000
+
+dialer-app (0.1+15.04.20150203.1-0ubuntu1) vivid; urgency=medium
+
+  [ Albert Astals Cid ]
+  * Update POT file
+
+  [ You-Sheng Yang ]
+  * DEB_HOST_GNU_TYPE and other variables may not be set when not using
+    tools like dpkg-buildpackage. Include
+    /usr/share/dpkg/architecture.mk as recommended in
+    https://wiki.debian.org/CrossBuildPackagingGuidelines .
+
+  [ Tiago Salem Herrmann ]
+  * Display IMEI of all available accounts.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 03 Feb 2015 18:43:06 +0000
+
+dialer-app (0.1+15.04.20150129-0ubuntu1) vivid; urgency=low
+
+  [ CI Train Bot ]
+  * Resync trunk
+
+  [ Gustavo Pichorim Boiko ]
+  * Make sure the labels on multi call screen don't overlap (LP:
+    #1414740)
+
+  [ Albert Astals Cid ]
+  * Use ctr instead of tr for "All"
+
+  [ Albert Astals ]
+  * Use ctr instead of tr for "All"
+
+  [ Tiago Salem Herrmann ]
+  * Change HistoryDetailsPage to display the exact phone number that was
+    used on each call and populate the Dialpad accordingly. (LP:
+    #1410500)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 29 Jan 2015 14:43:50 +0000
+
+dialer-app (0.1+15.04.20150124-0ubuntu1) vivid; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Notify error when trying to create conference calls and when
+    changing the call hold status. (LP: #1410365)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Sat, 24 Jan 2015 01:59:59 +0000
+
+dialer-app (0.1+15.04.20150120.1-0ubuntu1) vivid; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Update pot file.
+
+  [ Tiago Salem Herrmann ]
+  * Give some time to finish the greeter animation before removing the
+    LiveCall view. (LP: #1410961)
+  * Always show LiveCall view on greeter when hasCalls() is true.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 20 Jan 2015 13:05:21 +0000
+
+dialer-app (0.1+15.04.20150108-0ubuntu1) vivid; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Emergency mode refactor. Use two page stacks: one for normal mode
+    and another for emergency mode. (LP: #1404304, #1359337, #1400836)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 08 Jan 2015 21:30:49 +0000
+
+dialer-app (0.1+15.04.20150107-0ubuntu1) vivid; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Remove multiple entries all at once instead of using multiple calls.
+    (LP: #1404286)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 07 Jan 2015 19:48:54 +0000
+
+dialer-app (0.1+15.04.20141216-0ubuntu1) vivid; urgency=low
+
+  [ Dennis O'Flaherty ]
+  * Show hours in the call duration - fixes #1372689 (LP: #1372689)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 16 Dec 2014 02:46:21 +0000
+
+dialer-app (0.1+15.04.20141212-0ubuntu1) vivid; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Tiago Salem Herrmann ]
+  * Consider "wired_headset" and "earpiece" as default audio outputs.
+    (LP: #1398525)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 12 Dec 2014 13:12:16 +0000
+
+dialer-app (0.1+15.04.20141113-0ubuntu1) vivid; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Gustavo Pichorim Boiko ]
+  * Add empty state in the history page. (LP: #1367325)
+  * Do some basic QSceneGraph rendering optimizations.
+  * Format timestamps according to the locale. (LP: #1375890)
+  * Hide the SIM selector when in emergency mode. (LP: #1379386)
+  * Fix a lot of warnings. (LP: #1368438)
+  * Change live call control buttons to follow design. (LP: #1378006)
+  * Make sure the livecall is always in a consistent state, even after
+    being sigstopped. (LP: #1391324)
+  * Switch dialer-app to fullscreen mode when running on top of the
+    greeter. (LP: #1388156)
+
+  [ Nick Dedekind ]
+  * Only set the CallManager.callIndicatorVisible flag when
+    CallManager.hasCalls. (LP: #1390098)
+
+  [ Renato Araujo Oliveira Filho ]
+  * Enable page to receive focus.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 13 Nov 2014 14:41:25 +0000
+
+dialer-app (0.1+15.04.20141106-0ubuntu1) vivid; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Olivier Tilloy ]
+  * Also handle URLs of the form "tel:+1234567890", i.e. without slashes
+    (those are common on web pages). (LP: #1351222)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 06 Nov 2014 10:01:01 +0000
+
+dialer-app (0.1+14.10.20141020~rtm-0ubuntu1) 14.09; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Gustavo Pichorim Boiko ]
+  * Keep the header of call history view fixed to prevent the header
+    from disappearing.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 20 Oct 2014 17:35:52 +0000
+
+dialer-app (0.1+14.10.20141007.1-0ubuntu1) 14.09; urgency=low
+
+  [ Bill Filler ]
+  * use header in splash screen (LP: #1378379)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Gustavo Pichorim Boiko ]
+  * Display different labels when in emergency mode and when the sim
+    card is locked.
+  * Remove some code duplication and make sure emergency calling is
+    always available.
+  * Ship the dialer-app icon in the package. (LP: #1365408)
+
+  [ Tiago Salem Herrmann ]
+  * Add support for sim lock detection (LP: #1371661)
+  * Remove some code duplication and make sure emergency calling is
+    always available.
+
+  [ Albert Astals ]
+  * Add i18n.tr
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 07 Oct 2014 17:02:04 +0000
+
+dialer-app (0.1+14.10.20140924-0ubuntu1) 14.09; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Gustavo Pichorim Boiko ]
+  * Go back to greeter when pressing back on the live call if running on
+    top of the lock screen. (LP: #1362404)
+
+  [ Renato Araujo Oliveira Filho ]
+  * Changed swipe list item to not activate on mouse release. Changed
+    actions order on history page. (LP: #1368337)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 24 Sep 2014 17:55:40 +0000
+
+dialer-app (0.1+14.10.20140919.2-0ubuntu1) utopic; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Disable the progressive bottom edge gesture. (LP: #1368296)
+  * Do not call the phone numbers directly when clicking the items in
+    call log. Clicking them should only populate dialpad. (LP: #1368316)
+  * Do not show "Calling" after accepting an incoming call. (LP:
+    #1350006)
+  * Make sure the keypad entry hint is scaled if the text is too big
+    (the text translated into some languages might not fit). (LP:
+    #1348110)
+
+  [ Tiago Salem Herrmann ]
+  * Restore old focus behavior.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 19 Sep 2014 18:11:40 +0000
+
+dialer-app (0.1+14.10.20140917-0ubuntu1) utopic; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Gustavo Pichorim Boiko ]
+  * Update pot file.
+
+  [ Renato Araujo Oliveira Filho ]
+  * Increased the hit for backspace button and Add contact button. (LP:
+    #1368825)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 17 Sep 2014 13:47:27 +0000
+
+dialer-app (0.1+14.10.20140912-0ubuntu1) utopic; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Gustavo Pichorim Boiko ]
+  * Use the contact info exposed in the history models instead of having
+    multiple instances of the contact watcher. (LP: #1362387)
+
+  [ Leo Arias ]
+  * Added the initial suite of QML tests.
+
+  [ Renato Araujo Oliveira Filho ]
+  * Disable "back" action on live call while in greeter mode. (LP:
+    #1362404)
+  * Remove pagestack workaround.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 12 Sep 2014 21:37:08 +0000
+
+dialer-app (0.1+14.10.20140903.3-0ubuntu1) utopic; urgency=low
+
+  [ Ugo Riboni ]
+  * Make sure the strings from the .desktop file end up in the .pot
+    file. Follow convention and make paths in .pot file relative to po
+    dir as well.
+
+  [ Leo Arias ]
+  * Isolate the autopilot tests, use a fake url-dispatcher instead of
+    depending on messaging app and address book.
+  * Stop using the deprecated emulators namespace. (LP: #1341681)
+
+  [ Martin Pitt ]
+  * POT update
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Gustavo Pichorim Boiko ]
+  * Make sure the strings from the .desktop file end up in the .pot
+    file. Follow convention and make paths in .pot file relative to po
+    dir as well.
+  * Set the header sections model as undefined when there is only one
+    account available.
+  * Make it possible to profile the app without recompiling.
+
+  [ Renato Araujo Oliveira Filho ]
+  * Make sure the strings from the .desktop file end up in the .pot
+    file. Follow convention and make paths in .pot file relative to po
+    dir as well.
+  * Make sure that all contacts are visible before start the search.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 03 Sep 2014 17:08:23 +0000
+
+dialer-app (0.1+14.10.20140829.1-0ubuntu1) utopic; urgency=low
+
+  [ Martin Pitt ]
+  * update PO template
+
+  [ Gustavo Pichorim Boiko ]
+  * Add All/Missed categories to the call log page. (LP: #1320437)
+  * Update the live call designs according to the spec, including the
+    following changes: hide the header when DTMF keypad is active.
+    update the visuals and behavior of the multi call and conference
+    call scenarios. keep the live call view visible for a few seconds
+    showing the status of an ended call (LP: #1303260)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 29 Aug 2014 22:42:54 +0000
+
+dialer-app (0.1+14.10.20140827-0ubuntu1) utopic; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Tiago Salem Herrmann ]
+  * Display available audio routes on the live call view
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 27 Aug 2014 16:11:24 +0000
+
+dialer-app (0.1+14.10.20140825-0ubuntu1) utopic; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Add modular MMI support
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 25 Aug 2014 18:17:50 +0000
+
+dialer-app (0.1+14.10.20140821-0ubuntu1) utopic; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Gustavo Pichorim Boiko ]
+  * Group call history entries by phone number (when calls have happened
+    one after another) and by date
+
+  [ Tiago Salem Herrmann ]
+  * Display operator name in the header when available. Do not display
+    slots without sim cards. (LP: #1346804)
+  * Fix bug when displaying header actions after leaving the lock
+    screen. (LP: #1353952)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 21 Aug 2014 13:51:03 +0000
+
+dialer-app (0.1+14.10.20140813.3-0ubuntu1) utopic; urgency=low
+
+  [ Barry Warsaw ]
+  * Port autopilot tests to python3.
+
+  [ Leo Arias ]
+  * Port autopilot tests to python3.
+
+  [ Martti Piirainen ]
+  * Adding audible/haptic feedback while dialing (LP: #1228711). (LP:
+    #1228711)
+
+  [ Tiago Salem Herrmann ]
+  * Implement default sim dialogs.
+  * move MMI code to onKeyPressed(). use onPressed() instead of
+    onClicked() (LP: #1347370)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Gustavo Pichorim Boiko ]
+  * Do not update the .po files during `make`, update only the .pot
+    file.
+
+  [ Renato Araujo Oliveira Filho ]
+  * Add header section on ContactsPage to allow the user to switch
+    between the "all" and "favorites" contacts. Add an "Add new" button
+    on contact list header. (LP: #1356179)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 13 Aug 2014 22:28:22 +0000
+
+dialer-app (0.1+14.10.20140806-0ubuntu1) utopic; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Fix getting the bottom edge tip item in the autopilot tests. (LP:
+    #1353420)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 06 Aug 2014 15:33:45 +0000
+
+dialer-app (0.1+14.10.20140805-0ubuntu1) utopic; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Gustavo Pichorim Boiko ]
+  * Visual update. Update import to use Ubuntu.Components 1.1. Updated
+    HistoryDelegate with new ListItemWithActions visuals. Replaced local
+    implementation of PageWithBottomEdge with Ubuntu.Contacts
+    implementation. Used new SDK header API. .
+
+  [ Renato Araujo Oliveira Filho ]
+  * Visual update. Update import to use Ubuntu.Components 1.1. Updated
+    HistoryDelegate with new ListItemWithActions visuals. Replaced local
+    implementation of PageWithBottomEdge with Ubuntu.Contacts
+    implementation. Used new SDK header API. .
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 05 Aug 2014 12:48:19 +0000
+
+dialer-app (0.1+14.10.20140730-0ubuntu1) utopic; urgency=low
+
+  [ Bill Filler ]
+  * change name of app per design
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Gustavo Pichorim Boiko ]
+  * Use the account objects exposed from telephony QML plugin.
+
+  [ Leo Arias ]
+  * Set up the locale for autopilot tests. (LP: #1349582)
+  * On autopilot tests, swipe from the top of the bottom tip. (LP:
+    #1349641)
+
+  [ Pawel Stolowski ]
+  * Added X-Ubuntu-Default-Department-ID key to the desktop file. This
+    is required by click scope to support departments for preinstalled
+    applications.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 30 Jul 2014 17:56:15 +0000
+
+dialer-app (0.1+14.10.20140725.1-0ubuntu1) utopic; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Gustavo Pichorim Boiko ]
+  * Set the bottom edge visibility directly and not using the QML
+    states. For some reason the bottom edge widget doesn't like it. (LP:
+    #1346996)
+  * Fix the displayed label for unknown and private numbers, and also do
+    not allow placing calls for those numbers. (LP: #1340386)
+
+  [ Tiago Salem Herrmann ]
+  * Use an empty filter to return all the entries
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 25 Jul 2014 18:49:41 +0000
+
+dialer-app (0.1+14.10.20140718.1-0ubuntu1) utopic; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Hide account switcher when there is only one account.
+
+  [ Renato Araujo Oliveira Filho ]
+  * [HistoryPage] Reset any swiped item in HistoryPage after go back to
+    DialerPage. [ContactsPage] Use a opaque background on ContactsPage.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 18 Jul 2014 19:19:31 +0000
+
+dialer-app (0.1+14.10.20140717.2-0ubuntu1) utopic; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Add dual sim support.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 17 Jul 2014 21:39:50 +0000
+
+dialer-app (0.1+14.10.20140716.2-0ubuntu1) utopic; urgency=low
+
+  [ Ugo Riboni ]
+  * Add translations inside .desktop files (LP: #1318008)
+
+  [ Renato Araujo Oliveira Filho ]
+  * Update history page visuals. Use ContacAvar element from
+    Ubuntu.Contacts. Use ListItemWithActions element from
+    Ubuntu.Contacts.
+  * Used locale name as default region for phone number formatter. (LP:
+    #1331515)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 16 Jul 2014 20:43:36 +0000
+
+dialer-app (0.1+14.10.20140709-0ubuntu1) utopic; urgency=low
+
+  [ Renato Araujo Oliveira Filho ]
+  * Implemented contact search on ContactsPage.qml
+  * Used PhoneNumberInput class in KeypadEntry. This class implement the
+    phone number format internally.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 09 Jul 2014 00:52:44 +0000
+
+dialer-app (0.1+14.10.20140703-0ubuntu1) utopic; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Gustavo Pichorim Boiko ]
+  * Use wait_select_single() everywhere to avoid flaky tests, and make
+    sure we get the contact editor page only after it is fully loaded.
+    (LP: #1336741)
+  * Handle the dialer:// URI that will be used to request the live call
+    view and set the active call indicator to visible when not on the
+    live call screen.
+  * Enable emergency mode calls and also add support for running dialer
+    in a different mode when the greeter is active.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 03 Jul 2014 13:39:52 +0000
+
+dialer-app (0.1+14.10.20140701-0ubuntu1) utopic; urgency=low
+
+  [ Michał Sawicz ]
+  * New icon from suru theme.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 01 Jul 2014 07:33:40 +0000
+
+dialer-app (0.1+14.10.20140616-0ubuntu1) utopic; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * First round of design changes.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 16 Jun 2014 16:36:47 +0000
+
+dialer-app (0.1+14.10.20140530-0ubuntu2) utopic; urgency=medium
+
+  * Mark for using language packs. (LP: #1330360)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 16 Jun 2014 09:30:55 +0200
+
+dialer-app (0.1+14.10.20140530-0ubuntu1) utopic; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Fix the loading of translations.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 30 May 2014 13:30:44 +0000
+
+dialer-app (0.1+14.10.20140522-0ubuntu1) utopic; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Use upstart to launch the application to run the tests. (LP:
+    #1297900)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 22 May 2014 15:45:00 +0000
+
+dialer-app (0.1+14.10.20140512.1-0ubuntu1) utopic; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Tiago Salem Herrmann ]
+  * update po and pot files
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 12 May 2014 22:56:39 +0000
+
+dialer-app (0.1+14.10.20140512-0ubuntu1) utopic; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Make sure placing calls via command line arguments works correctly
+    by delaying the actual start of the call until the dialer app is
+    ready, and by checking the connectivity status before actually
+    placing the call. (LP: #1309143)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 12 May 2014 19:20:59 +0000
+
+dialer-app (0.1+14.04.20140415-0ubuntu1) trusty; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Do not wait for the telepathy stuff to get ready to process the
+    command line arguments. This ensures that the dialpad view is not
+    visible when calling using the argument tel:///<number> (LP:
+    #1286358)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 15 Apr 2014 19:51:41 +0000
+
+dialer-app (0.1+14.04.20140411-0ubuntu1) trusty; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Make it possible to start a new call while already in a call. (LP:
+    #1306203)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 11 Apr 2014 12:49:15 +0000
+
+dialer-app (0.1+14.04.20140410-0ubuntu1) trusty; urgency=low
+
+  [ Dimitri John Ledkov ]
+  * Invoke magic 199 callback via dbus, instead of scripts to reliably
+    quiesce the error. (LP: #1287628) (LP: #1287628)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 10 Apr 2014 19:43:15 +0000
+
+dialer-app (0.1+14.04.20140407-0ubuntu1) trusty; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Add initial USSD support (LP: #1195398)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 07 Apr 2014 23:08:51 +0000
+
+dialer-app (0.1+14.04.20140402-0ubuntu1) trusty; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Add a better UI (not final yet) for multi-calls and make it possible
+    to create and manage conference calls.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 02 Apr 2014 00:50:11 +0000
+
+dialer-app (0.1+14.04.20140325-0ubuntu1) trusty; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Make sure the telepathy-ofono account is using the correct modem
+    before running the tests.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 25 Mar 2014 05:35:33 +0000
+
+dialer-app (0.1+14.04.20140319-0ubuntu1) trusty; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * do not filter by accountId. specify accountId when calling back from
+    call log .
+
+  [ Tiago Salem Herrmann ]
+  * do not filter by accountId. specify accountId when calling back from
+    call log .
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 19 Mar 2014 02:43:36 +0000
+
+dialer-app (0.1+14.04.20140306-0ubuntu1) trusty; urgency=low
+
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 06 Mar 2014 08:17:54 +0000
+
+dialer-app (0.1+14.04.20140228-0ubuntu1) trusty; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Improve the live call view behavior by addressing the following
+    points: Start in the live call directly when there is an existing
+    call (to avoid showing the dialpad for a short time before loading
+    the live call view). Merge the voicemail view into the live call
+    one. This addresses a problem that when you were on a voicemail call
+    and got another call, there was no way to switch between them. (LP:
+    #1277763)
+
+  [ chris.gagnon ]
+  * use page object pattern, so maintaining code and finding bugs are
+    easier to find.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 28 Feb 2014 14:54:29 +0000
+
+dialer-app (0.1+14.04.20140226-0ubuntu1) trusty; urgency=low
+
+  [ chris.gagnon ]
+  * Use wait_select_single when getting HistoryDelegate0 instead of
+    select_single, to fix a couple flaky tests (LP: #1284316)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 26 Feb 2014 21:27:58 +0000
+
+dialer-app (0.1+14.04.20140221-0ubuntu1) trusty; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Omer Akram ]
+  * fix failing test due to change in messaging-app (LP: #1282981)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 21 Feb 2014 20:07:19 +0000
+
+dialer-app (0.1+14.04.20140219-0ubuntu1) trusty; urgency=low
+
+  [ Omer Akram ]
+  * autopilot: add tests for inter-app integration per design spec
+  * change autopilot tests to create reusable helpers to be consumed by
+    ubuntu-integration-tests
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 19 Feb 2014 22:30:50 +0000
+
+dialer-app (0.1+14.04.20140218-0ubuntu1) trusty; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Make it possible to override the default contact manager. This is
+    particularly useful for running tests, when the memory backend can
+    be used.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 18 Feb 2014 21:38:48 +0000
+
+dialer-app (0.1+14.04.20140213-0ubuntu1) trusty; urgency=low
+
+  [ Ted Gould ]
+  * Add a file to configure the URL for URL dispatcher.
+
+  [ Gustavo Pichorim Boiko ]
+  * Truncate the contact name on call log if it doesn't fit. (LP:
+    #1268965)
+
+  [ Dimitri John Ledkov ]
+  * Change dbus-x11 depenendcy to dbus, as only `dbus-send' is used, not
+    `dbus-launch'. This helps to reduce amount of X11 libraries on the
+    image.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 13 Feb 2014 00:10:42 +0000
+
+dialer-app (0.1+14.04.20140210-0ubuntu1) trusty; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Make the test
+    dialer_app.tests.test_calls.TestCalls.test_outgoing_answer_local_han
+    gup more robust by using Eventually() to compare the page title.
+    (LP: #1278519)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 10 Feb 2014 18:02:16 +0000
+
+dialer-app (0.1+14.04.20140130-0ubuntu1) trusty; urgency=low
+
+  [ Bill Filler ]
+  * o not pass the phone number as a parameter when pushing the live
+    call view for an outgoing call. The correct value will be taken from
+    the callManager. This fixes the problem of the header not updating
+    when switching between multiple calls. Re-add try catch around
+    autopilot test as the underlying mir/shell crash has not been fixed
+
+  [ Martin Pitt ]
+  * tests: Drop expected crash for LP#1240400, it's fixed now. (LP:
+    #1240400)
+
+  [ Gustavo Pichorim Boiko ]
+  * Implement support for switching calls.
+  * Fix a typo in the default avatar setting on history page.
+  * Fix the call duration parsing by using Qt.formatTime() to split
+    hours, minutes and seconds. (LP: #1242772)
+  * o not pass the phone number as a parameter when pushing the live
+    call view for an outgoing call. The correct value will be taken from
+    the callManager. This fixes the problem of the header not updating
+    when switching between multiple calls. Re-add try catch around
+    autopilot test as the underlying mir/shell crash has not been fixed
+
+  [ Omer Akram ]
+  * Load testability driver if QT_LOAD_TESTABILITY is in the
+    environment.
+
+  [ Dimitri John Ledkov ]
+  * Drop executing qmake, to query a variable, which is then not used.
+    Adjust dependency on any:arch python, fixes cross-compilation.
+    build-dependency installation.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 30 Jan 2014 17:06:44 +0000
+
+dialer-app (0.1+14.04.20131209-0ubuntu1) trusty; urgency=low
+
+  [ Martin Pitt ]
+  * Add a README.testing to explain what the tests do and how to run
+    them.
+  * Drop connected_tests, they are essentially empty and superseded by
+    the dialer_app phonesim tests.
+
+  [ Gustavo Pichorim Boiko ]
+  * Handle unknown and private numbers.
+
+  [ Leo Arias ]
+  * Fix pep8 errors. (LP: #1250270)
+  * Fixed static errors detected by pyflakes. (LP: #1250275)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 82
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 09 Dec 2013 04:18:47 +0000
+
+dialer-app (0.1+14.04.20131107-0ubuntu1) trusty; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Fix autopilot tests to work with autopilot 1.4. (LP: #1248553)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 76
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 07 Nov 2013 05:24:17 +0000
+
+dialer-app (0.1+14.04.20131104.1-0ubuntu1) trusty; urgency=low
+
+  [ Martin Pitt ]
+  * Add ofono-phonesim-autostart dependency to -autopilot to enable CI
+    phonesim tests, and fix some missing dependencies and test setup.
+    (LP: #1240519)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 74
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 04 Nov 2013 19:23:32 +0000
+
+dialer-app (0.1+14.04.20131029.1-0ubuntu1) trusty; urgency=low
+
+  [ Bill Filler ]
+  * make all expandable items full opaque. close expandable items when
+    the app becomes inactive
+
+  [ Łukasz 'sil2100' Zemczak ]
+  * add missing autopilot dependency
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 72
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 29 Oct 2013 12:41:11 +0000
+
+dialer-app (0.1+13.10.20131015.2-0ubuntu1) saucy; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Limit the size of images in memory.
+
+  [ Omer Akram ]
+  * disable the hold button and dim it a bit as the functionality is not
+    in place yet. Also dim the contact button in the live call panel
+    since that does nothing as well.
+
+  [ Renato Araujo Oliveira Filho ]
+  * Make sure that the item ask for confirmation before get deleted.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 69
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 15 Oct 2013 20:24:10 +0000
+
+dialer-app (0.1+13.10.20131011-0ubuntu1) saucy; urgency=low
+
+  [ Martin Pitt ]
+  * Add some incoming/outgoing call tests, using ofono-phonesim.
+
+  [ Gustavo Pichorim Boiko ]
+  * Add a screenshot of the dialer-app.
+  * Update the dialer-app to the latest designs, containing the
+    following changes: Remove extra background from the smart dialing
+    results. Move the numbers a little bit down in the dialpad view.
+    Update the call log to the latest designs. Fix the multiselection
+    mark positioning.
+  * Change the dialer-app to use the new URL dispatcher mechanism. (LP:
+    #1230404)
+  * Refine the design of the call log view.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 65
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 11 Oct 2013 08:47:20 +0000
+
+dialer-app (0.1+13.10.20131004.1-0ubuntu1) saucy; urgency=low
+
+  [ Dennis O'Flaherty ]
+  * Format date properly so friendlyDay() can return the right string.
+    (LP: #1229139)
+
+  [ Ugo Riboni ]
+  * Update the pot file and a translation. (LP: #1232374)
+
+  [ Gustavo Pichorim Boiko ]
+  * Update the designs of the dialer-app fixing the following issues: -
+    Remove the bottom divider (between the keypad and the call button)
+    to have more space for the smart dialing results. - Make the keypad
+    a little darker - Put the results of the smart dialing inside the
+    lighter area (where the numbers are) - Make the keypad buttons
+    shrink when pressed instead of going darker.
+
+  [ Renato Araujo Oliveira Filho ]
+  * Fixed avatar scale on live call page.
+
+  [ Tiago Salem Herrmann ]
+  * Replace the current contact/phone number by the dtmf string on the
+    live call view. (LP: #1225060)
+  * Prevent the new contact dialog from becoming unresponsive.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 59
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 04 Oct 2013 07:23:26 +0000
+
+dialer-app (0.1+13.10.20131001.4-0ubuntu1) saucy; urgency=low
+
+  [ Tiago Hillebrandt ]
+  * Empty KeyPad entry after start call.
+
+  [ Gustavo Pichorim Boiko ]
+  * Update some icons to use the theme instead of the local assets. Also
+    set the backspace icon to be white when there is text to erase. (LP:
+    #1226157)
+  * Make the text center aligned in the dialer input field. - Change the
+    cursor delegate to use the correct color. (LP: #1229202, #1222902)
+  * Limit the number of digits to 20 and scale the font down when the
+    numbers don't fit on the screen. (LP: #1082054)
+
+  [ Tiago Salem Herrmann ]
+  * Push views to the pagestack even before the telepathy channel is
+    created. (LP: #1218311)
+  * Add support for expansive delegates on call log view.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 52
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 01 Oct 2013 21:20:44 +0000
+
+dialer-app (0.1+13.10.20130926.1-0ubuntu1) saucy; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Add a timeline indicator in the call log view. (LP: #1213990)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 45
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 26 Sep 2013 08:46:09 +0000
+
+dialer-app (0.1+13.10.20130925-0ubuntu1) saucy; urgency=low
+
+  [ Ted Gould ]
+  * Adding single instance marker to the desktop file.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 43
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 25 Sep 2013 06:35:25 +0000
+
+dialer-app (0.1+13.10.20130919.3-0ubuntu1) saucy; urgency=low
+
+  * Automatic snapshot from revision 41
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 19 Sep 2013 15:47:12 +0000
+
+dialer-app (0.1+13.10.20130917-0ubuntu1) saucy; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Add a basic implementation of the smart lookup dialer.
+
+  [ Tiago Salem Herrmann ]
+  * invoke popups also on pressAndHold.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 39
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 17 Sep 2013 12:57:23 +0000
+
+dialer-app (0.1+13.10.20130830.2-0ubuntu1) saucy; urgency=low
+
+  [ Łukasz 'sil2100' Zemczak ]
+  * Fix dependencies for the autopilot packages - ubuntu-ui-toolkit-
+    autopilot was missing (fixes LP: #1218794). (LP: #1218794)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 36
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 30 Aug 2013 13:26:45 +0000
+
+dialer-app (0.1+13.10.20130829-0ubuntu1) saucy; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * fix delegate size in history page fix avatar size in history page.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 33
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 29 Aug 2013 03:20:41 +0000
+
+dialer-app (0.1+13.10.20130828.1-0ubuntu1) saucy; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * update visual design.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 31
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 28 Aug 2013 11:48:46 +0000
+
+dialer-app (0.1+13.10.20130827-0ubuntu1) saucy; urgency=low
+
+  [ Sebastien Bacher ]
+  * update the depends, some of the binaries got renamed when entering
+    the ubuntu archive. Let the old names, as an alternative, for the
+    transition, those can be dropped later.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 29
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 27 Aug 2013 11:18:02 +0000
+
+dialer-app (0.1+13.10.20130826.2-0ubuntu1) saucy; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Disable automatic rotation in the dialer-app.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 27
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 26 Aug 2013 19:14:40 +0000
+
+dialer-app (0.1+13.10.20130826-0ubuntu1) saucy; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Use the correct application icon.
+  * Add some autopilot tests for the dialer-app.
+
+  [ Tiago Salem Herrmann ]
+  * disable observer when app becomes inactive.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 25
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 26 Aug 2013 02:36:24 +0000
+
+dialer-app (0.1+13.10.20130823.1-0ubuntu1) saucy; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Initial release
+
+  [ Łukasz 'sil2100' Zemczak ]
+  * Modifications related to compliance with our packaging standards
+  * Automatic snapshot from revision 20 (bootstrap)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 21
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 23 Aug 2013 07:16:48 +0000
